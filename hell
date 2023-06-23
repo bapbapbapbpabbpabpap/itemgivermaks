@@ -686,24 +686,6 @@ local function itemGiver(item, var)
                     end
                 end
             end
-        if item == "BatSaber" then
-            for i, v in next, itemGiversFolder:GetChildren() do
-                if v:IsA("Model") and v.Name == item then
-                    if v:GetAttribute("BatSaberType") == "bsblue" and var == "bsblue" then
-                        local cd = v:FindFirstChild("Giver").ClickDetector
-                        fireclickdetector(cd)
-                    elseif v:GetAttribute("BatSaberType") == "bsred" and var == "bsred" then
-                        local cd = v:FindFirstChild("Giver").ClickDetector
-                        fireclickdetector(cd)
-                    if v:GetAttribute("BatSaberType") == "bsgreen" and var == "bsgreen" then
-                        local cd = v:FindFirstChild("Giver").ClickDetector
-                        fireclickdetector(cd)
-                    elseif v:GetAttribute("BatSaberType") == "bsbaseball" and var == "bsbaseball" then
-                        local cd = v:FindFirstChild("Giver").ClickDetector
-                        fireclickdetector(cd)
-                    end
-                end
-            end
         elseif item == "parasol" then
             for i, v in next, itemGiversFolder:GetChildren() do
                 if v:IsA("Model") and v.Name == item then
